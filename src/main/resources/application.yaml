@@ -1,0 +1,15 @@
+server:
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: auth
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017/authorization-server?authSource=admin
+      database: authorization-server
+
+#App properties
+app:
+  jwtSecret: bezKoderSecretKey
+  jwtExpirationMs: 86400000
